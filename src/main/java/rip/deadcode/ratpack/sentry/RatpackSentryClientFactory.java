@@ -15,7 +15,7 @@ public final class RatpackSentryClientFactory extends DefaultSentryClientFactory
     public RatpackSentryClientFactory() {}
 
     /**
-     * @see <a href="https://docs.sentry.io/clients/java/context/">Context & Breadcrumbs</a>
+     * @see <a href="https://docs.sentry.io/clients/java/context/">Context {@literal &} Breadcrumbs</a>
      *
      * @param dsn Sentry DSN
      * @return A new {@link RatpackSentryContextManager} instance.
