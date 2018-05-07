@@ -18,7 +18,7 @@ apply plugin: 'com.jfrog.bintray'
 apply plugin: 'maven-publish'
 
 group 'rip.deadcode'
-version '0.1'
+version '0.2-SNAPSHOT'
 
 sourceCompatibility = 1.8
 compileJava.options.encoding = "UTF-8"
@@ -91,7 +91,7 @@ bintray {
     key = project.hasProperty('BINTRAY_KEY') ? BINTRAY_KEY : ''
     pkg {
         repo = 'test'
-        name = 'izvestia'
+        name = 'ratpack-sentry'
         licenses = ['MIT']
         vcsUrl = 'https://github.com/minebreaker-tf/ratpack-sentry.git'
     }
