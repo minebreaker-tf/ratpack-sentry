@@ -10,13 +10,28 @@ Using Sentry in Ratpack application
 * [Sentry](https://sentry.io)
 
 Sentry by default uses `ThreadLocalContextManager`,
-which means Ratpack context very well.
+which means it can't handle contexts in Ratpack very well.
 `RatpackSentryContextManager` provides `Context`s per
 Ratpack Execution.
 If not in Execution, returns singleton `Context`.
 
 
 ## Set up
+
+### Gradle
+
+```groovy:build.gradle
+repositories {
+    maven {
+        url = "https://dl.bintray.com/minebreaker/test"
+    }
+}
+dependencies {
+    compile 'io.sentry:sentry-logback:1.7.4'
+}
+```
+
+### Java code
 
 Specify `SentryClientFactory` for `RatpackSentryClientFactory`.
 
