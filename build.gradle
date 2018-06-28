@@ -41,14 +41,14 @@ dependencies {
             'io.sentry:sentry:1.7.5',
     )
     testCompile(
-            'org.junit.jupiter:junit-jupiter-api:5.1.0',
+            'org.junit.jupiter:junit-jupiter-api:5.2.0',
 
             'io.ratpack:ratpack-test:1.5.4',
 
             'com.google.truth:truth:0.41',
             'com.google.truth.extensions:truth-java8-extension:0.41',
             'org.mockito:mockito-core:2.18.3',
-            'rip.deadcode:izvestia:0.1',
+            'rip.deadcode:izvestia:0.2',
 //            'com.google.jimfs:jimfs:1.1'
 
             'org.slf4j:slf4j-api:1.7.25',
@@ -56,7 +56,7 @@ dependencies {
             'ch.qos.logback:logback-classic:1.2.3',
             'io.sentry:sentry-logback:1.7.5',
     )
-    testRuntime 'org.junit.jupiter:junit-jupiter-engine:5.1.0'
+    testRuntime 'org.junit.jupiter:junit-jupiter-engine:5.2.0'
 }
 
 task sourcesJar(type: Jar, dependsOn: classes) {
